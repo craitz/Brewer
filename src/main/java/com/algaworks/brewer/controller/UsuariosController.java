@@ -11,7 +11,7 @@ import com.algaworks.brewer.model.Usuario;
 @RequestMapping("/usuarios")
 public class UsuariosController {
 
-	@RequestMapping(value = "novo", method = RequestMethod.GET)
+	@RequestMapping(value = "/novo", method = RequestMethod.GET)
 	public ModelAndView novo(Usuario usuario) {
 		ModelAndView mv = new ModelAndView("usuario/CadastroUsuario");
 		return mv;

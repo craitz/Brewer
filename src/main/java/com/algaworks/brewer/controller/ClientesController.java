@@ -11,7 +11,7 @@ import com.algaworks.brewer.model.Cliente;
 @RequestMapping("/clientes")
 public class ClientesController {
 
-	@RequestMapping(value = "novo", method = RequestMethod.GET)
+	@RequestMapping(value = "/novo", method = RequestMethod.GET)
 	public ModelAndView novo(Cliente cliente) {
 		ModelAndView mv = new ModelAndView("cliente/CadastroCliente");
 		return mv;

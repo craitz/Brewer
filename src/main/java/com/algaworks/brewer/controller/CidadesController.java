@@ -11,7 +11,7 @@ import com.algaworks.brewer.model.Cidade;
 @RequestMapping("/cidades")
 public class CidadesController {
 
-	@RequestMapping(value = "novo", method = RequestMethod.GET)
+	@RequestMapping(value = "/novo", method = RequestMethod.GET)
 	public ModelAndView novo(Cidade cidade) {
 		ModelAndView mv = new ModelAndView("cidade/CadastroCidade");
 		return mv;
